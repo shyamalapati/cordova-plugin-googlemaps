@@ -1624,7 +1624,7 @@ public class PluginMap extends MyPlugin implements OnMarkerClickListener,
         } catch (SecurityException e) {
           e.printStackTrace();
         }
-        map.getUiSettings().setMyLocationButtonEnabled(isEnabled);
+        map.getUiSettings().setMyLocationButtonEnabled(false);
         callbackContext.success();
       }
     });
