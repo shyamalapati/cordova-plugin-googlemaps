@@ -265,7 +265,7 @@
 - (void)setMyLocationEnabled:(CDVInvokedUrlCommand *)command {
   [[NSOperationQueue mainQueue] addOperationWithBlock:^{
     Boolean isEnabled = [[command.arguments objectAtIndex:0] boolValue];
-    self.mapCtrl.map.settings.myLocationButton = isEnabled;
+    //self.mapCtrl.map.settings.myLocationButton = isEnabled;
     self.mapCtrl.map.myLocationEnabled = isEnabled;
   }];
 
